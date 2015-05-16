@@ -13,25 +13,25 @@ The Voxbone VoxSMS module enables you to send/receive SMS and delivery reports f
 ### Instantiate the module
 1. Add the dependency to your application
 
-`````
-var Voxbone = require('voxbone');
-`````
+  `````
+  var Voxbone = require('voxbone');
+  `````
 
 2. Add your credentials
 
-````
-var api_login = 'login';
-var api_password = 'password';
-``````
+  ````
+  var api_login = 'login';
+  var api_password = 'password';
+  ``````
 
 3. Create a new Voxbone object
 
-`````
-var voxbone = new Voxbone({
-  apiLogin: api_login,
-  apiPassword: api_password
-});
-``````
+  `````
+  var voxbone = new Voxbone({
+    apiLogin: api_login,
+    apiPassword: api_password
+  });
+  ``````
 
 ### Send an SMS
 
@@ -40,20 +40,20 @@ var voxbone = new Voxbone({
 
 1. Add your parameters to send a message
 
-`````
-var from = "+3228080438"; //a Voxbone number enabled for VoxSMS (format: +3200000)
-var to = "3222222222"; //the destination number (format: 3200000)
-var msg = "your message";
-var dr = "all"; //Delivery reports - Accepted values: success, failure, all, none
-`````
+  `````
+  var from = "+3228080438"; //a Voxbone number enabled for VoxSMS (format: +3200000)
+  var to = "3222222222"; //the destination number (format: 3200000)
+  var msg = "your message";
+  var dr = "all"; //Delivery reports - Accepted values: success, failure, all, none
+  `````
 
 2. Generate a fragmentation reference for your sms
 
-This will be used in case your message is too long.
+  This will be used in case your message is too long.
 
-`````
-var fragref = voxbone.createFragRef();
-`````
+  `````
+  var fragref = voxbone.createFragRef();
+  `````
 
 3. Send SMS with the parameters configured in step 1
 
@@ -63,9 +63,9 @@ voxbone.sendSMS(to, from, msg, fragref, dr);
 
 4. Launch the application with:
 
-````
-npm start
-````
+  ````
+  npm start
+  ````
 
 When the application starts (within the terminal), it will send an sms with the configurations you gave it and listen for incoming messages and delivery reports (until you shutdown the application).
 
