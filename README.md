@@ -57,9 +57,9 @@ The Voxbone VoxSMS module enables you to send/receive SMS and delivery reports f
 
 3. Send SMS with the parameters configured in step 1
 
-`````
-voxbone.sendSMS(to, from, msg, fragref, dr);
-````
+  `````
+  voxbone.sendSMS(to, from, msg, fragref, dr);
+  ````
 
 4. Launch the application with:
 
