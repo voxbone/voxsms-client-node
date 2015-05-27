@@ -74,6 +74,9 @@ When the application starts (within the terminal), it will send an sms with the 
 In order to be able to receive incoming messages and delivery reports  while testing you will have to use a tunnelling service.
 
 An exmaple is [ngrok](https://ngrok.com/). Once you've got your ngrok public URL set up, add it to your configured callback URL in the portal.
+
+This library uses the command ./ngrok http 8080
+
 ## Docs
 
 Available functions:
