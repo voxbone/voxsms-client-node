@@ -14,7 +14,7 @@ The Voxbone VoxSMS module enables you to send/receive SMS and delivery reports f
 1. In routes/sms.js add the dependency to your application
 
   `````
-  var Voxbone = require('voxbone');
+  var Voxbone = require('voxbone-voxsms');
   `````
 
 2. routes/sms.js, add your credentials
